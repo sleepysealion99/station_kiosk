@@ -8,17 +8,34 @@ Selects all image tags and makes them 500px;
 /*img {*/
 /*  width: 500px;*/
 /*}*/
-
-.storyboards {
-  display: inline-flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  margin: 6px;
+.storyboard .figcaption {
+  display: table-caption;
+	caption-side: bottom;
 }
 
-img{
-  max-width: 100%;
-  max-height: 100%;
+.page {
+	width: 80%;
+	max-width: 50em;
+	margin: 5em auto;
+	padding: 2em;
+	background-color: #f0f0f0;
+}
+
+.storyboard {
+	display: inline-block;
+	border: 1px solid #999;
+	margin-bottom: 1.5em;
+	padding: 20px;
+	background-color: white;
+}
+
+.storyboards {
+  display: table;
+	table-layout: fixed;
+  display: inline-flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 6px;
 }
 
 .interface {
@@ -27,12 +44,23 @@ img{
   margin: 6px;
 }
 
+html {
+	background-color: lightblue;
+}
+
 .station-kiosk{
   width: 500px;
   height: 600px;
 }
 
 .storyboard-item {
-  width: 500px;
-  height: 300px;
+  display: table-caption;
+	caption-side: bottom;
+  display: table;
+	table-layout: fixed;
+}
+
+.storyboard-item img {
+	margin-bottom: 10px;
+	border: 0;
 }
