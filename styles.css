@@ -1,0 +1,38 @@
+#cs1300-gallery {
+  background-color: lightblue;
+}
+
+/* Uncomment below if images are way too big.
+Selects all image tags and makes them 500px;
+ */
+/*img {*/
+/*  width: 500px;*/
+/*}*/
+
+.storyboards {
+  display: inline-flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 6px;
+}
+
+img{
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.interface {
+  display: inline-flex;
+  justify-content: center;
+  margin: 6px;
+}
+
+.station-kiosk{
+  width: 500px;
+  height: 600px;
+}
+
+.storyboard-item {
+  width: 500px;
+  height: 300px;
+}
